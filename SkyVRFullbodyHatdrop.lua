@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/PresidentAnvil/HatdropReanimation/main/Valuable%20Dependencies/thething.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/funkygonorheraaa/holee-sky-vr-workering-/refs/heads/main/thething.lua"))()
 pcall(function()loader:Destroy()end)
 local fpdh = workspace.FallenPartsDestroyHeight
 local StudsOffset = 0.1
