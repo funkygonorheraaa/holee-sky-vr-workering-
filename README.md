@@ -1,6 +1,6 @@
 # this is not mine all credits go to the developers i just cloned because if it goes down it'd be nice to keep it
 
-made with <3, by presidentanvil || https://skyvr.loadlua.xyz
+made with <3, by presidentanvil || https://skyvr.loadlua.xyz (plz go at your own discretion that shits a scam and phishing site now)
 
 ```lua
 -- DO NOT RUN THIS IN VR MODE
