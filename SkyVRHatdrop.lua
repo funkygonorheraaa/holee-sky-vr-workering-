@@ -134,7 +134,7 @@ function HatdropCallback(Character, callback)
     callback(getAllHats(Character))
     Character.Humanoid:ChangeState(15)
 	for _, v in Character.Humanoid:GetAccessories() do
-		v.Handle.Velocity = Vector3.new(0,0,0)
+		v.Handle.Velocity = Vector3.new(0,20,0)
 	end
 	--replicatesignal(character.Humanoid.ServerBreakJoints)
 	torso.AncestryChanged:Wait()
