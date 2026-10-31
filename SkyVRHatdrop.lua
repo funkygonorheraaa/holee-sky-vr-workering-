@@ -133,7 +133,7 @@ function HatdropCallback(Character, callback)
     task.wait(.25)
     callback(getAllHats(Character))
     Character.Humanoid:ChangeState(15)
-	replicatesignal(character.Humanoid.ServerBreakJoints)
+	--replicatesignal(character.Humanoid.ServerBreakJoints)
 	torso.AncestryChanged:Wait()
     for i,v in pairs(locks) do
         v:Disconnect()
