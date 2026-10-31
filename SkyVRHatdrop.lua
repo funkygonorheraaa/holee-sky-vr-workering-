@@ -128,7 +128,7 @@ function HatdropCallback(Character, callback)
         
         hrp.Velocity = Vector3.new(0,0,25)
         hrp.RotVelocity = Vector3.new(0,0,0)
-        hrp.CFrame = CFrame.new(startCF.X,fpdh-.25,startCF.Z) * (Character:FindFirstChild("Torso") and CFrame.Angles(math.rad(20),0,0)
+        hrp.CFrame = CFrame.new(startCF.X,fpdh-.25,startCF.Z) * CFrame.Angles(math.rad(20),0,0)
     end)
     task.wait(.25)
     callback(getAllHats(Character))
