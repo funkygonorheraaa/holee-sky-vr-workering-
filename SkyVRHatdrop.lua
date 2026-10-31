@@ -128,11 +128,12 @@ function HatdropCallback(Character, callback)
         
         hrp.Velocity = Vector3.new(0,0,25)
         hrp.RotVelocity = Vector3.new(0,0,0)
-        hrp.CFrame = CFrame.new(startCF.X,fpdh-.25,startCF.Z) * CFrame.Angles(math.rad(20),0,0)
+        hrp.CFrame = CFrame.new(startCF.X,fpdh-.25,startCF.Z) * (Character:FindFirstChild("Torso") and CFrame.Angles(math.rad(20),0,0) or CFrame.new())
     end)
     task.wait(.25)
     callback(getAllHats(Character))
     Character.Humanoid:ChangeState(15)
+	replicatesignal(character.Humanoid.ServerBreakJoints)
 	torso.AncestryChanged:Wait()
     for i,v in pairs(locks) do
         v:Disconnect()
