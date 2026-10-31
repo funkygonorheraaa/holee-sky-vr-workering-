@@ -104,7 +104,7 @@ end
 function HatdropCallback(Character, callback)
     Character:WaitForChild("Humanoid")
     Character:WaitForChild("HumanoidRootPart")
-	task.wait(0.4)
+	task.wait()
     local AnimationInstance = Instance.new("Animation");AnimationInstance.AnimationId = "rbxassetid://35154961"
 	workspace.FallenPartsDestroyHeight = 0/0
     local hrp = Character.HumanoidRootPart
@@ -112,7 +112,7 @@ function HatdropCallback(Character, callback)
 	local torso = Character:FindFirstChild("Torso") or Character:FindFirstChild("LowerTorso")
     local Track = Character.Humanoid.Animator:LoadAnimation(AnimationInstance)
     Track:Play()
-    Track.TimePosition = 3.24
+    Track.TimePosition = 3.67
     Track:AdjustSpeed(0)
     local locks = {}
     for i,v in pairs(Character.Humanoid:GetAccessories()) do
@@ -128,7 +128,7 @@ function HatdropCallback(Character, callback)
         
         hrp.Velocity = Vector3.new(0,0,25)
         hrp.RotVelocity = Vector3.new(0,0,0)
-        hrp.CFrame = CFrame.new(startCF.X,fpdh-.25,startCF.Z) * (Character:FindFirstChild("Torso") and CFrame.Angles(math.rad(20),0,0) or CFrame.new())
+        hrp.CFrame = CFrame.new(startCF.X,fpdh-.35,startCF.Z) * (Character:FindFirstChild("Torso") and CFrame.Angles(math.rad(20),0,0) or CFrame.new())
     end)
     task.wait(.25)
     callback(getAllHats(Character))
