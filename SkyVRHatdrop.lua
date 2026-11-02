@@ -126,7 +126,7 @@ function HatdropCallback(Character, callback)
     local c;c=game:GetService("RunService").PostSimulation:Connect(function()
         if(not Character:FindFirstChild("HumanoidRootPart"))then c:Disconnect()return;end
         
-        hrp.Velocity = Vector3.new(0,0,25)
+        hrp.Velocity = Vector3.new(0,-10,25)
         hrp.RotVelocity = Vector3.new(0,0,0)
         hrp.CFrame = CFrame.new(startCF.X,fpdh-.25,startCF.Z) * (Character:FindFirstChild("Torso") and CFrame.Angles(math.rad(20),0,0) or CFrame.new())
     end)
